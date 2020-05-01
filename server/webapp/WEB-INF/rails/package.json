@@ -9,7 +9,9 @@
     "jasmine-ci": "karma start --single-run",
     "karma": "karma start",
     "eslint": "eslint --color --ext .js --ext .msx --format stylish webpack/ spec/webpack/ --ignore-pattern gen/",
-    "eslintold": "eslint --no-eslintrc --config .eslintrc-old.json --color --ext .js  --format stylish app/assets/javascripts/ spec/javascripts/"
+    "eslintold": "eslint --no-eslintrc --config .eslintrc-old.json --color --ext .js  --format stylish app/assets/javascripts/ spec/javascripts/",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "dependencies": {
     "@shopify/draggable": "^1.0.0-beta.7",
@@ -19,8 +21,8 @@
     "dragula": "^3.7.2",
     "filesize": "^3.5.10",
     "font-awesome": "^4.7.0",
-    "foundation-sites": "^6.2.3",
-    "jquery": "^2.2.0",
+    "foundation-sites": "^6.3.1",
+    "jquery": "^3.5.0",
     "jquery-textcomplete": "0.8.2",
     "lodash": "^4.2.1",
     "lodash-inflection": "^1.5.0",
@@ -29,7 +31,8 @@
     "moment": "^2.20.1",
     "moment-duration-format": "^2.2.1",
     "underscore.string": "^3.3.4",
-    "uuid": "^3.2.1"
+    "uuid": "^3.2.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -77,5 +80,6 @@
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.8"
-  }
+  },
+  "snyk": true
 }
