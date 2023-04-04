@@ -3,8 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.0'
 
-gem 'rails', '5.2.1'
-gem 'sass-rails', '5.0.7'
+gem 'rails', '6.1.7.3'
+gem 'sass-rails', '6.0.0'
 gem 'uglifier'
 
 gem 'dynamic_form'
@@ -26,7 +26,7 @@ group :development, :test do
   gem 'jasmine_selenium_runner'
 
   gem 'ruby-debug-base'
-  gem 'ruby-debug-ide', '0.7.0.beta6'
+  gem 'ruby-debug-ide', '0.7.0'
 
   # make sure to `System.setProperty("jruby.runtime.arguments", "--debug")` before opening up pry
   gem 'pry-debugger-jruby'
@@ -37,7 +37,7 @@ group :test do
   gem 'rspec-rails'
   gem 'rspec-instafail', require: false
   gem 'rspec_junit_formatter'
-  gem 'rails-controller-testing'
+  gem 'rails-controller-testing', '>= 1.0.3'
 end
 
 group :development do
