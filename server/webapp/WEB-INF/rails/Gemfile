@@ -34,7 +34,7 @@ end
 
 group :test do
   gem 'capybara', '2.15.4'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 8.0.0'
   gem 'rspec-instafail', require: false
   gem 'rspec_junit_formatter'
   gem 'rails-controller-testing'
